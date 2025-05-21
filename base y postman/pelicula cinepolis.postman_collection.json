@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "fc979b0b-7ba2-4ab1-9d53-1ab8f3ea69a1",
+		"name": "pelicula cinepolis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45138184"
+	},
+	"item": [
+		{
+			"name": "Mostrar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/WebServicePeliculas/Mostrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"WebServicePeliculas",
+						"Mostrar"
+					]
+				},
+				"description": "tarea de peliculas_cinepolis\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Guardar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n        \r\n        \"clave\": \"C1005\",\r\n        \"nombre\": \"EVOLUCION\",\r\n        \"genero\": \"DRAMA\",\r\n        \"precio\": 90.0\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/WebServicePeliculas/Guardar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"WebServicePeliculas",
+						"Guardar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"idPelicula\": 5\r\n        \r\n    },",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/WebServicePeliculas/buscarXid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"WebServicePeliculas",
+						"buscarXid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"idPelicula\": 5,\r\n        \"clave\": \"C1005\",\r\n        \"nombre\": \"EVOLUCION\",\r\n        \"genero\": \"DRAMA\",\r\n        \"precio\": 120.50\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/WebServicePeliculas/editar",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"WebServicePeliculas",
+						"editar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"idPelicula\": 5\r\n        \r\n    },",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/WebServicePeliculas/eliminar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"WebServicePeliculas",
+						"eliminar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
